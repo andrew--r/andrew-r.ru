@@ -5,6 +5,9 @@
 # Build
 build/
 
+# Private files
+ftp.json
+
 # Development stuff
 node_modules/
 *.sublime-workspace
