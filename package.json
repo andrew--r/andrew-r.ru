@@ -20,7 +20,6 @@
     "gulp": "^3.9.1",
     "gulp-csso": "^2.0.0",
     "gulp-htmlmin": "^3.0.0",
-    "gulp-inline-source": "^3.0.0",
     "gulp-postcss": "^6.2.0",
     "gulp-uncache": "^0.4.0-beta1",
     "postcss-import": "^8.1.2",

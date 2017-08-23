@@ -5,7 +5,6 @@ import atImport from 'postcss-import';
 import cssnext from 'cssnext';
 import csso from 'gulp-csso';
 
-import inline from 'gulp-inline-source';
 import uncache from 'gulp-uncache';
 import minifyMarkup from 'gulp-htmlmin';
 
@@ -35,9 +34,6 @@ gulp.task('styles', () => {
 gulp.task('markup', ['styles'], () => {
 	return gulp
 		.src(`${SOURCE}/index.html`)
-		.pipe(inline({
-			rootpath: OUT,
-		}))
 		.pipe(uncache())
 		.pipe(minifyMarkup({
 			collapseWhitespace: true,
