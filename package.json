@@ -4,8 +4,8 @@
   "description": "Personal site",
   "main": "source/index.html",
   "scripts": {
-    "build": "rm -rf ./build && ./node_modules/.bin/gulp",
-    "deploy": "yarn run build && ./node_modules/.bin/gulp deploy"
+    "build": "rm -rf ./build && gulp",
+    "deploy": "npm run build && gulp deploy"
   },
   "repository": {
     "url": "https://github.com/andrew--r/andrew-r.ru.git",
