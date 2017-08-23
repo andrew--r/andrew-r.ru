@@ -17,7 +17,7 @@ import ftpCredentials from './ftp.json';
 const SOURCE = './source';
 const OUT = './build';
 const STATIC_OUT = `${OUT}/static`;
-const FTP_DEST = '/';
+const FTP_DEST = '/httpdocs';
 
 gulp.task('styles', () => {
 	const postcssPlugins = [
