@@ -1,0 +1,29 @@
+html,
+body {
+	box-sizing: border-box;
+	font-family: var(--font-family);
+	font-size: var(--font-size);
+	line-height: var(--line-height);
+}
+
+body {
+	padding: calc(var(--step) * 2);
+}
+
+@media (min-width: 768px) {
+	body {
+		padding: calc(var(--step) * 5);
+	}
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+.screen {
+	min-height: 80vh;
+}

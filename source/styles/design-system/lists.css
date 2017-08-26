@@ -1,0 +1,20 @@
+ul,
+ol {
+	max-width: var(--max-line-width);
+	padding-left: 1.5em;
+}
+
+@media (min-width: 768px) {
+	ul,
+	ol {
+		padding-left: 2em;
+	}
+}
+
+ul {
+	list-style: none;
+}
+
+li {
+	padding-top: calc(var(--line-height) * .3em);
+}

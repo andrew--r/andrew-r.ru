@@ -1,0 +1,5 @@
+@import './design-system/config.css';
+@import './design-system/base.css';
+@import './design-system/typography.css';
+@import './design-system/links.css';
+@import './design-system/lists.css';
