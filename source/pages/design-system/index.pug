@@ -1,0 +1,34 @@
+extends ../../layouts/main
+
+block head
+  - var pageTitle = 'Design System';
+
+block content
+  section
+    section
+      p.paragraph
+        a(href='/') ← main page
+      h1.h1 Design System
+      p.paragraph.text.text--large A design system is a collection of documentation on principles and best practices, that helps guide a team to build digital products. They are often embodied in UI libraries and pattern libraries, but can extend to include guides on other areas such as 'Voice and Tone'...
+    section
+      p.h1 Heading 1
+      p.h2 Heading 2
+      p.h3 Heading 3
+    section
+      p.paragraph.text.text--large
+        | Large text. A #[b design system] is #[i a collection of documentation] on principles and #[a(href='') best practices], that helps guide a team to build digital products. They are often embodied in #[span.caps UI] libraries and pattern libraries, but can extend to include guides on other areas such as 'Voice and Tone'...
+      p.paragraph
+        | Regular text. A #[b design system] is #[i a collection of documentation] on principles and #[a(href='') best practices], that helps guide a team to build digital products. They are often embodied in #[span.caps UI] libraries and pattern libraries, but can extend to include guides on other areas such as 'Voice and Tone'...
+      p.paragraph.text.text--small
+        | Small text. A #[b design system] is #[i a collection of documentation] on principles and #[a(href='') best practices], that helps guide a team to build digital products. They are often embodied in #[span.caps UI] libraries and pattern libraries, but can extend to include guides on other areas such as 'Voice and Tone'...
+    section
+      p.paragraph Unordered list:
+      ul
+        li
+          | Lorem ipsum dolor sit amet consectetur adipisicing elit. Et incidunt exercitationem non ab ea omnis similique natus veniam, animi enim inventore impedit excepturi repellat delectus temporibus, debitis fugiat iste porro.
+        li the second item;
+        li the last item.
+      p.paragraph Ordered list:
+      ol
+        li Start
+        li End

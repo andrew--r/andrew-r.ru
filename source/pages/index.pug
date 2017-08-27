@@ -1,0 +1,29 @@
+extends ../layouts/main
+
+block head
+  - var title = 'Andrey Romanov, front-end web developer';
+
+block content
+  section
+    h1.h1 Andrey Romanov, #[span.nobr front-end] web developer
+    p.paragraph.text.text--large Hi! I'm #[span#age 19] years old. I live in #[span.muted Omsk →] Moscow and work at #[span.muted #[a(href='https://inn.ru/en.html') Innova] → #[a(href='https://rambler-co.ru') #[span.caps RAMBLER&C]o] →] #[a(href='https://www.avito.ru') Avito]. I'm passionate about design and music.
+
+    p.paragraph In my spare time I read various articles and books, learn english, experiment with new technologies, and play guitar.
+
+    p.paragraph Since 2014 I seek news and useful stuff for front-end developers, and share it with the community through #[a.caps(href='https://vk.com/forwebdev') VK], #[a(href='https://t.me/forwebdev') Telegram] and #[a(href='https://twitter.com/forwebdev') Twitter]. I called this project “For Web”.
+
+    p.paragraph Sometimes I write and translate articles. Here is #[a(href='/notes') my blog]. Also I translated and authored several articles for #[a(href='http://frontender.info') Frontender Magazine], #[a(href='https://habrahabr.ru/users/andrew-r') Habrahabr], #[a(href='http://forwebdev.ru') For Web] and #[a(href='https://hexlet.io/blog') Hexlet].
+
+    p.paragraph See you!
+
+    ul
+      li
+        a.nobr(href='tel:89994601864') 8 999 460-18-64
+      li
+        a.nobr(href='mailto:me@andrew-r.ru') me@andrew-r.ru
+      li
+        a(href='https://telegram.me/andrew-r') Telegram
+      li
+        a.caps(href='https://vk.com/andrew_r') VK
+      li
+        a(href='https://github.com/andrew--r') GitHub
