@@ -8,10 +8,8 @@ body {
 
 body {
 	padding: calc(var(--step) * 2);
-}
 
-@media (--tablet) {
-	body {
+	@media (--tablet) {
 		padding: calc(var(--step) * 5);
 	}
 }

@@ -4,6 +4,7 @@ import postcssAtImport from 'postcss-import';
 import postcssCalc from 'postcss-calc';
 import postcssCustomProperties from 'postcss-custom-properties';
 import postcssCustomMedia from 'postcss-custom-media';
+import postcssNesting from 'postcss-nesting';
 import csso from 'gulp-csso';
 import uncache from 'gulp-uncache';
 import minifyMarkup from 'gulp-htmlmin';
@@ -20,6 +21,7 @@ gulp.task('styles', () =>  gulp
 	.src(`${SOURCE}/styles/design-system.css`)
 	.pipe(postcss([
 		postcssAtImport(),
+		postcssNesting(),
 		postcssCustomMedia(),
 		postcssCalc(),
 	]))
