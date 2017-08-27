@@ -14,7 +14,8 @@ a {
 	background-size: 1px 1px;
 }
 
-a:hover {
+a:hover,
+a:focus {
 	color: var(--links-color-hover);
 	background-image: linear-gradient(180deg, var(--links-underline-color-hover) 0, var(--links-underline-color-hover));
 }
