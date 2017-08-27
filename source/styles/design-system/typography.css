@@ -1,59 +1,59 @@
 .h1,
 .h2,
 .h3 {
-	max-width: var(--max-line-width);
-	padding-top: calc(2/3 * 1em);
-	font-weight: 700;
+  max-width: var(--max-line-width);
+  padding-top: calc(2/3 * 1em);
+  font-weight: 700;
 }
 
 .h1 {
-	font-size: var(--text-size-xxl);
+  font-size: var(--text-size-xxl);
 }
 
 .h2 {
-	font-size: var(--text-size-xl);
+  font-size: var(--text-size-xl);
 }
 
 .h3 {
-	font-size: var(--text-size-l);
+  font-size: var(--text-size-l);
 }
 
 .h1 + .paragraph,
 .h2 + .paragraph,
 .h3 + .paragraph {
-	padding-top: 0;
+  padding-top: 0;
 }
 
 .paragraph {
-	max-width: var(--max-line-width);
-	padding-top: calc(1em * var(--line-height));
+  max-width: var(--max-line-width);
+  padding-top: calc(1em * var(--line-height));
 }
 
 .text {
-	max-width: var(--max-line-width);
+  max-width: var(--max-line-width);
 }
 
 .text--large {
-	font-size: var(--text-size-l);
+  font-size: var(--text-size-l);
 }
 
 .text--small {
-	font-size: var(--text-size-s);
+  font-size: var(--text-size-s);
 }
 
 .caps {
-	text-transform: uppercase;
-	letter-spacing: .15em;
+  text-transform: uppercase;
+  letter-spacing: .15em;
 }
 
 .nobr {
-	white-space: nowrap;
+  white-space: nowrap;
 }
 
 .muted {
-	color: var(--color-lightgray);
+  color: var(--color-lightgray);
 }
 
 .muted a {
-	opacity: .35;
+  opacity: .35;
 }

@@ -18,50 +18,50 @@ const STATIC_OUT = `${OUT}/static`;
 const FTP_DEST = '/httpdocs';
 
 gulp.task('styles', () =>  gulp
-	.src(`${SOURCE}/styles/design-system.css`)
-	.pipe(postcss([
-		postcssAtImport(),
-		postcssNesting(),
-		postcssCustomMedia(),
-		postcssCalc(),
-	]))
-	.pipe(csso())
-	.pipe(gulp.dest(STATIC_OUT))
+  .src(`${SOURCE}/styles/design-system.css`)
+  .pipe(postcss([
+    postcssAtImport(),
+    postcssNesting(),
+    postcssCustomMedia(),
+    postcssCalc(),
+  ]))
+  .pipe(csso())
+  .pipe(gulp.dest(STATIC_OUT))
 );
 
 gulp.task('markup', ['styles'], () => {
-	return gulp
-		.src(`${SOURCE}/index.html`)
-		.pipe(uncache())
-		.pipe(minifyMarkup({
-			collapseWhitespace: true,
-			collapseBooleanAttributes: true,
-			removeComments: true,
-			removeRedundantAttributes: true,
-		}))
-		.pipe(gulp.dest(OUT));
+  return gulp
+    .src(`${SOURCE}/index.html`)
+    .pipe(uncache())
+    .pipe(minifyMarkup({
+      collapseWhitespace: true,
+      collapseBooleanAttributes: true,
+      removeComments: true,
+      removeRedundantAttributes: true,
+    }))
+    .pipe(gulp.dest(OUT));
 });
 
 gulp.task('images', () => {
-	return gulp
-		.src(`${SOURCE}/images/*`)
-		.pipe(gulp.dest(STATIC_OUT));
+  return gulp
+    .src(`${SOURCE}/images/*`)
+    .pipe(gulp.dest(STATIC_OUT));
 });
 
 gulp.task('build', ['markup', 'styles', 'images']);
 
 gulp.task('deploy', () => {
-	const ftpConnection = ftp.create({
-		host: ftpCredentials.host,
-		user: ftpCredentials.user,
-		password: ftpCredentials.password,
-		log: gutil.log,
-	});
+  const ftpConnection = ftp.create({
+    host: ftpCredentials.host,
+    user: ftpCredentials.user,
+    password: ftpCredentials.password,
+    log: gutil.log,
+  });
 
-	return gulp
-		.src(`${OUT}/**/*`)
-		.pipe(ftpConnection.newerOrDifferentSize(FTP_DEST))
-		.pipe(ftpConnection.dest(FTP_DEST))
+  return gulp
+    .src(`${OUT}/**/*`)
+    .pipe(ftpConnection.newerOrDifferentSize(FTP_DEST))
+    .pipe(ftpConnection.dest(FTP_DEST))
 });
 
 gulp.task('default', ['build']);

@@ -1,21 +1,21 @@
 :root {
-	--links-color: #07c;
-	--links-color-hover: #cd192e;
-	--links-underline-color:rgba(24, 107, 170, 0.4);
-	--links-underline-color-hover: rgba(205, 25, 46, 0.4);
+  --links-color: #07c;
+  --links-color-hover: #cd192e;
+  --links-underline-color:rgba(24, 107, 170, 0.4);
+  --links-underline-color-hover: rgba(205, 25, 46, 0.4);
 }
 
 a {
-	text-decoration: none;
-	color: var(--links-color);
-	background-image: linear-gradient(180deg, var(--links-underline-color) 0, var(--links-underline-color));
-	background-repeat: repeat-x;
-	background-position: 0 95%;
-	background-size: 1px 1px;
+  text-decoration: none;
+  color: var(--links-color);
+  background-image: linear-gradient(180deg, var(--links-underline-color) 0, var(--links-underline-color));
+  background-repeat: repeat-x;
+  background-position: 0 95%;
+  background-size: 1px 1px;
 }
 
 a:hover,
 a:focus {
-	color: var(--links-color-hover);
-	background-image: linear-gradient(180deg, var(--links-underline-color-hover) 0, var(--links-underline-color-hover));
+  color: var(--links-color-hover);
+  background-image: linear-gradient(180deg, var(--links-underline-color-hover) 0, var(--links-underline-color-hover));
 }

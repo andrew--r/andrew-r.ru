@@ -1,17 +1,17 @@
 ul,
 ol {
-	max-width: var(--max-line-width);
-	padding-left: 1.5em;
+  max-width: var(--max-line-width);
+  padding-left: 1.5em;
 
-	@media (--tablet) {
-		padding-left: 2em;
-	}
+  @media (--tablet) {
+    padding-left: 2em;
+  }
 }
 
 ul {
-	list-style: none;
+  list-style: none;
 }
 
 li {
-	padding-top: calc(var(--line-height) * .3em);
+  padding-top: calc(var(--line-height) * .3em);
 }
