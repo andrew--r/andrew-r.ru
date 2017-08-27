@@ -2047,6 +2047,44 @@
         }
       }
     },
+    "postcss-custom-media": {
+      "version": "6.0.0",
+      "from": "postcss-custom-media@latest",
+      "resolved": "https://registry.npmjs.org/postcss-custom-media/-/postcss-custom-media-6.0.0.tgz",
+      "dev": true,
+      "dependencies": {
+        "ansi-styles": {
+          "version": "3.2.0",
+          "from": "ansi-styles@>=3.1.0 <4.0.0",
+          "resolved": "https://registry.npmjs.org/ansi-styles/-/ansi-styles-3.2.0.tgz",
+          "dev": true
+        },
+        "chalk": {
+          "version": "2.1.0",
+          "from": "chalk@>=2.1.0 <3.0.0",
+          "resolved": "https://registry.npmjs.org/chalk/-/chalk-2.1.0.tgz",
+          "dev": true
+        },
+        "has-flag": {
+          "version": "2.0.0",
+          "from": "has-flag@>=2.0.0 <3.0.0",
+          "resolved": "https://registry.npmjs.org/has-flag/-/has-flag-2.0.0.tgz",
+          "dev": true
+        },
+        "postcss": {
+          "version": "6.0.10",
+          "from": "postcss@>=6.0.1 <7.0.0",
+          "resolved": "https://registry.npmjs.org/postcss/-/postcss-6.0.10.tgz",
+          "dev": true
+        },
+        "supports-color": {
+          "version": "4.2.1",
+          "from": "supports-color@>=4.2.1 <5.0.0",
+          "resolved": "https://registry.npmjs.org/supports-color/-/supports-color-4.2.1.tgz",
+          "dev": true
+        }
+      }
+    },
     "postcss-custom-properties": {
       "version": "6.1.0",
       "from": "postcss-custom-properties@6.1.0",

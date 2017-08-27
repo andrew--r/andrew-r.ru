@@ -6,17 +6,14 @@
 	font-weight: 700;
 }
 
-h1,
 .h1 {
 	font-size: var(--text-size-xxl);
 }
 
-h2,
 .h2 {
 	font-size: var(--text-size-xl);
 }
 
-h3,
 .h3 {
 	font-size: var(--text-size-l);
 }

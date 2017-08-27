@@ -10,7 +10,7 @@ body {
 	padding: calc(var(--step) * 2);
 }
 
-@media (min-width: 768px) {
+@media (--tablet) {
 	body {
 		padding: calc(var(--step) * 5);
 	}
