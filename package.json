@@ -26,6 +26,7 @@
     "postcss-custom-properties": "6.1.0",
     "postcss-import": "10.0.0",
     "postcss-nesting": "4.1.0",
+    "require-dir": "0.3.2",
     "vinyl-ftp": "0.6.0"
   },
   "dependencies": {}

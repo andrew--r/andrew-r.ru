@@ -2448,6 +2448,12 @@
       "resolved": "https://registry.npmjs.org/replace-ext/-/replace-ext-0.0.1.tgz",
       "dev": true
     },
+    "require-dir": {
+      "version": "0.3.2",
+      "from": "require-dir@latest",
+      "resolved": "https://registry.npmjs.org/require-dir/-/require-dir-0.3.2.tgz",
+      "dev": true
+    },
     "require-from-string": {
       "version": "1.2.1",
       "from": "require-from-string@>=1.1.0 <2.0.0",
