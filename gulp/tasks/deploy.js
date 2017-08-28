@@ -1,7 +1,7 @@
 import gulp from 'gulp';
 import ftp from 'vinyl-ftp';
 import gutil from 'gulp-util';
-import { FTP_DEST } from '../config';
+import { OUT, FTP_DEST } from '../config';
 import ftpCredentials from '../ftp.json';
 
 gulp.task('deploy', () => {
