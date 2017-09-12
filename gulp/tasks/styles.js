@@ -6,10 +6,12 @@ import postcssCustomProperties from 'postcss-custom-properties';
 import postcssCustomMedia from 'postcss-custom-media';
 import postcssNesting from 'postcss-nesting';
 import csso from 'gulp-csso';
+import plumber from '../plumber';
 import { SOURCE, STATIC_OUT } from '../config';
 
 gulp.task('styles', () =>  gulp
   .src(`${SOURCE}/styles/design-system.css`)
+  .pipe(plumber())
   .pipe(postcss([
     postcssAtImport(),
     postcssNesting(),

@@ -1178,6 +1178,12 @@
         }
       }
     },
+    "gulp-plumber": {
+      "version": "1.1.0",
+      "from": "gulp-plumber@latest",
+      "resolved": "https://registry.npmjs.org/gulp-plumber/-/gulp-plumber-1.1.0.tgz",
+      "dev": true
+    },
     "gulp-postcss": {
       "version": "7.0.0",
       "from": "gulp-postcss@7.0.0",
@@ -1252,7 +1258,7 @@
     },
     "gulp-util": {
       "version": "3.0.8",
-      "from": "gulp-util@>=3.0.0 <4.0.0",
+      "from": "https://registry.npmjs.org/gulp-util/-/gulp-util-3.0.8.tgz",
       "resolved": "https://registry.npmjs.org/gulp-util/-/gulp-util-3.0.8.tgz",
       "dev": true,
       "dependencies": {
