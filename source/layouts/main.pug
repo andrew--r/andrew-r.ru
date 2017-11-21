@@ -1,7 +1,7 @@
 doctype html
 html(lang='en')
   include ../blocks/head/head
-  body
+  body(onload="javascript:age.innerHTML=~~((Date.now() - new Date(1997, 10, 21)) / (31557600000))")
     block content
 
     script(type='text/javascript').
